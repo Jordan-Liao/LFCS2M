@@ -1,16 +1,3 @@
-"""Inference modules for LFCS2M SAR synthetic-to-measured translation.
-
-This file intentionally exposes the paper-facing module names:
-
-- LFCS2M: latent diffusion style inference wrapper.
-- FDFRM: Frequency Domain Feature Refinement Module.
-- MIGCA: Measured Information Guided Cross Attention.
-
-The implementation is inference-only. It contains no optimizer, no training loop,
-and no loss computation. High-fidelity output requires a trained checkpoint whose
-state_dict matches this module, or use `translate_test.py --backend leds2m` for
-checkpoints trained by the original LEDS2M repository backend.
-"""
 
 from __future__ import annotations
 

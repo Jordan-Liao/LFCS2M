@@ -1,0 +1,9 @@
+_runtime/
+results/**/*.png
+results/**/*.json
+weights/*.pth
+weights/*.pt
+weights/*.ckpt
+data/synthetic_test/*
+!data/README.md
+!weights/README.md

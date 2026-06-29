@@ -1,0 +1,23 @@
+# Inference-only configuration for LFCS2M_release/translate_test.py
+# No training options are included.
+
+model:
+  name: LFCS2M
+  image_size: 256
+  in_channels: 3
+  base_channels: 64
+  latent_channels: 64
+  spectral_mask_size: 64
+  attention_heads: 4
+  use_fdf_rm: true      # keeps the FDFRM module active
+  use_migca: true       # keeps the MIGCA module active
+
+sampling:
+  steps: 200
+  clip_denoised: true
+
+io:
+  input_dir: LFCS2M_release/data/synthetic_test
+  output_dir: LFCS2M_release/results/translated
+  checkpoint: LFCS2M_release/weights/lfcs2m.pth
+  normalization: linear   # linear | sar_mean_clip

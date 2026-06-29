@@ -1,6 +1,6 @@
 # LFCS2M 
 
-This folder adds a test script for Synthetic-to-Measured SAR image translation.
+This folder adds a test script for LFCS2M.
 
 ## What is included
 

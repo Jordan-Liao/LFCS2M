@@ -2,8 +2,6 @@
 
 This folder adds a test script for LFCS2M.
 
-The complete training code and pretrained weights are coming soon.
-
 ## What is included
 
 ```text
